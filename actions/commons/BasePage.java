@@ -17,6 +17,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class BasePage {
 	//Chua cac ham dung trong tat ca cac page
 	
+	public BasePage getBasePageObject () {
+		BasePage basePage;
+		return basePage = new BasePage();
+	}
+	
 	public void openPageUrl (WebDriver driver, String pageUrl) {
 		driver.get(pageUrl);
 	}
@@ -123,7 +128,7 @@ public class BasePage {
 	
 	public void clickToElement (WebDriver driver, String xpathLocator) {
 		WebElement element = getWebElement(driver, xpathLocator);
-		element.clear();
+//		element.clear();
 		element.click();
 	}
 	

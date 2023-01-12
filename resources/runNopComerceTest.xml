@@ -2,7 +2,7 @@
 <suite name="NopComerce">
   <test name="Run on Firefox">
     <classes>
-      <class name="com.nopcomerce.user.User_01_Register"/>
+      <class name="com.nopcomerce.user.Level_02_Apply_BasePage_Register"/>
     </classes>
   </test> 
 </suite> 

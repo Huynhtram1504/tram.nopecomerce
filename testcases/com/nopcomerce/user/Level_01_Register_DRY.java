@@ -12,7 +12,19 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class User_01_Register {
+public class Level_01_Register_DRY {
+	//Là 1 class wrapper lại các function/method của Selenium WebDriver
+	//Cách viết hàm:
+	//1. Access modifier: public/protected/private/default
+	//2. Kiểu dữ liệu của hàm (Data type): void/int/String/boolean/WebElement/List<WebElement>/...
+	//3. Tên hàm: đặt có nghĩa theo tên hàm cần viết. Convention tuân thủ theo từng ngôn ngữ lập trình (Java - camel case)
+	//4. Có tham số hay ko (tùy vào chức năng cần viết)
+	//5. Kiểu dữ liệu trả về cho hàm: nếu như return thì nó là step cuối cùng
+	
+	//Tạm thời sẽ set public, qua các bài học qua tính kế thừa sẽ set lại
+	//1 hàm chỉ xử lý 1 chức năng
+	//Ko phải class nào cũng được khởi tạo Driver
+	
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String emailAddress;
