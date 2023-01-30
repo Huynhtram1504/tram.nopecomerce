@@ -132,6 +132,12 @@ public class BasePage {
 		element.click();
 	}
 	
+	public void clickToTextBox (WebDriver driver, String xpathLocator) {
+		WebElement element = getWebElement(driver, xpathLocator);
+		element.clear();
+		element.click();
+	}
+	
 	public void sendKeyToElement(WebDriver driver, String xpathLocator, String textValue) {
 		getWebElement(driver, xpathLocator).sendKeys(textValue);
 	}
